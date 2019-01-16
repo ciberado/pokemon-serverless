@@ -7,7 +7,7 @@ const pokemonInfo = require('./pokemon').pokemonInfo;
 console.log(`About to insert ${pokemonInfo.length} into ${process.env.TABLE_ARN}.`);
 
 AWS.config.update({
-  region: process.env.REGION
+  region: process.env.AWS_REGION
 });
 
 const docClient = new AWS.DynamoDB.DocumentClient();
