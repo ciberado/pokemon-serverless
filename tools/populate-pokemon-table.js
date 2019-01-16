@@ -32,4 +32,4 @@ pokemonInfo.forEach(pokemon => {
   });
 });
 
-console.log(`Done. Updated ${count} Pokémon.`);
+console.log(`Done.`);
